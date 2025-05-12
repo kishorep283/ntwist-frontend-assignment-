@@ -5,15 +5,21 @@ const email_error = document.getElementById("email_error");
 const submitForm = document.getElementById("form-div");
 const timer = document.getElementById("time-shower");
 const pop_up =document.getElementById("pop-up");
-let startTime;
+
+/** NAvBAr Toggle Button Function */
 const toggleBtn = document.getElementById('toggleBtn');
 const navbar = document.getElementById('navbarSubdiv');
 toggleBtn.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
+
+/** Talling the time duration for filling the form */
+let startTime;
 submitForm.addEventListener("input",(e)=>{
     startTime =Date.now();
 })
+
+/** Submitting the Form  */
 submitForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     if(!username.checkValidity()){

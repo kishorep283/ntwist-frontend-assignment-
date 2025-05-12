@@ -1,8 +1,11 @@
+/** NAvbar Toggle Function */
 const toggleBtn = document.getElementById('toggleBtn');
     const navbar = document.getElementById('navbarSubdiv');
     toggleBtn.addEventListener('click', () => {
         navbar.classList.toggle('show');
     });
+
+/** Function for sorting Data  */
 function sortList() {
     var list = document.getElementById("nameList");
     var items = list.getElementsByTagName("li");
