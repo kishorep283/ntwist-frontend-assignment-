@@ -1,0 +1,171 @@
+
+/** NavBar Stylings **/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  padding: 0% 5%;
+  flex-wrap: wrap;
+}
+
+#navbarSubdiv {
+  display: flex;
+  align-items: center;
+}
+
+#navbarSubdiv ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#navbarSubdiv ul li {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+#navbarSubdiv ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbarSubdiv ul a:hover {
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* nav{
+    width: 100vw;
+  } */
+  .hamburger {
+    display: block;
+  }
+
+  #navbarSubdiv {
+    display: none;
+    width: 100%;
+  }
+
+  #navbarSubdiv ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  #navbarSubdiv ul li:hover{
+    color: red;
+  }
+
+  #navbarSubdiv.show {
+    display: flex;
+  }
+  #right-container{
+    width: 70%;
+    margin-right: 10%;
+  }
+  #pop-up{
+    width: 50% !important;
+    height: 30% !important;
+  }
+}
+@media (max-width:400px) {
+  nav{
+    width: 100vw;
+  };
+  #right-container{
+    width: 50vw;
+    margin-right: 20%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+}
+/** Body Stylings  **/
+
+#main-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 10%;
+}
+
+#right-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+#form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-div label {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+#form-div input,
+#form-div textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#form-div textarea {
+  resize: vertical;
+}
+
+#form-div button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#form-div button:hover {
+  background-color: #45a049;
+}
+
+#time-shower{
+  font-size: 1rem;
+  color: blue;
+}
+#pop-up{
+  border: 2px solid black;
+  /* display: none; */
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 30%;
+  left:35%;
+  background-color: white;
+  border-radius: 20px;
+  color: green;
+  display: none;
+}
+#pop-sub-div{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}

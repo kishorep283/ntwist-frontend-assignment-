@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/faq.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>My App</h2>
+        </div>
+        <button id="toggleBtn" class="hamburger">☰</button>
+        <div id="navbarSubdiv">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sort.html">List</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="body-div">
+        <div id="content-div">
+            <h2>JavaScript FAQ</h2>
+
+            <details>
+                <summary>What is JavaScript?</summary>
+                <p>JavaScript is a scripting language used to make web pages interactive.</p>
+            </details>
+
+            <details>
+                <summary>What is the difference between var, let, and const?</summary>
+                <p>var is function scoped, let and const are block scoped. const cannot be reassigned.</p>
+            </details>
+
+            <details>
+                <summary>What is a function?</summary>
+                <p>A function is a block of code that performs a specific task and can be reused.</p>
+            </details>
+
+            <details>
+                <summary>What is an array in JavaScript?</summary>
+                <p>An array is a collection of items stored in a single variable.</p>
+            </details>
+
+            <details>
+                <summary>What is an object in JavaScript?</summary>
+                <p>An object is a collection of key-value pairs used to store multiple values.</p>
+            </details>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navbar = document.getElementById('navbarSubdiv');
+
+        toggleBtn.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+</script>
+</body>
+</html>

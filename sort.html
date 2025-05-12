@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/sort.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>My App</h2>
+        </div>
+        <button id="toggleBtn" class="hamburger">☰</button>
+        <div id="navbarSubdiv">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sort.html">List</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="body-div">
+        <div id="content-div">
+            <h1>List of Names</h1>
+            <ul id="nameList">
+                <li>Alice</li>
+                <li>Bob</li>
+                <li>Charlie</li>
+                <li>David</li>
+                <li>Eva</li>
+            </ul>
+            <label for="sortOrder">Sort Order: </label>
+            <select id="sortOrder" onchange="sortList()">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+    </div>
+    <script src="./assets/js/sort.js"></script>
+</body>
+</html>
